@@ -15,14 +15,14 @@
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 // DHT Initialisation
-#define DATAPIN 50
+#define DATAPIN ?? // Add DHT Data Pin here
 #define DHTTYPE DHT22
 DHT dht(DATAPIN, DHTTYPE);
 
 // MQ135 Initialization
 #define MAXCO2 4000
-#define RZERO 212.5
-MQ135 gasSensor = MQ135(A0);
+#define RZERO ?? // Add calibrated RZero Value here
+MQ135 gasSensor = MQ135(A0); // Add MQ135 Analog Pin here if not A0
 
 // Variables
 int co2Value = 0;
